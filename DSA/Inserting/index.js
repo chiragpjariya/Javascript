@@ -11,6 +11,7 @@ let newEl = 10.10;
 
 console.log(Array);
 
+Without InBuilde Fuction .
 for (let i = Array.length - 1; i >= 0; i--) {
     if (i >= pos) {
         Array[i + 1] = Array[i]
@@ -22,4 +23,9 @@ for (let i = Array.length - 1; i >= 0; i--) {
 }
 
 
-console.log(Array)
+// console.log(Array)
+// In Builde fucntion
+// Array.splice(position,delete,newELement)
+
+// Array.splice(2,0,2000)
+// console.log(Array);
