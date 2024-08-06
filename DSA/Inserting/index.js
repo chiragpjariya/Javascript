@@ -11,7 +11,7 @@ let newEl = 10.10;
 
 console.log(Array);
 
-Without InBuilde Fuction .
+// Without InBuilde Fuction .
 for (let i = Array.length - 1; i >= 0; i--) {
     if (i >= pos) {
         Array[i + 1] = Array[i]
