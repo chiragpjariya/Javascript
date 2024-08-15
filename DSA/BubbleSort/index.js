@@ -1,4 +1,4 @@
-let array = [12,86,6,74,100,459,74,65,91,58,14];
+let array = [126,86,6,74,100,459,74,65,91,58,14];
 
 for(let i = 0; i<array.length;i++){
     for(let j =0;j<array.length;j++){
@@ -6,7 +6,11 @@ for(let i = 0; i<array.length;i++){
             let temp = array[j];
             array[j]=array[j+1];
             array[j+1]=temp
+            console.log(array,":","j is :",j,"i is :",i);
+            
         }
     }
 }
 console.log(array);
+
+// Create prototype of sorting array
