@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stack in class</title>
+</head>
+
+<body>
+    <script>
+        class stcks {
+            stack = []
+            CurrVal = this.stack.length;
+            
+            max = 5
+
+            push(el) {
+
+                if (this.CurrVal >= this.max) {
+                    alert("stack is full")
+                }
+
+                this.stack[this.CurrVal] = el
+                this.CurrVal+=1;
+            }
+
+            dis(){
+                
+                
+                console.log(this.stack);
+                
+            }
+
+            pop() {
+
+                if (this.CurrVal < 0) {
+                    alert("stack is also empty")
+                }
+
+                this.CurrVal--;
+                console.log(this.CurrVal);
+                
+                this.stack.length = this.CurrVal
+            }
+        }
+
+        let objOne = new stcks()
+        objOne.push(10)
+        objOne.push(20)
+        objOne.push(30)
+        objOne.push(40)
+        objOne.push(50)
+        objOne.push(70)
+        objOne.pop()
+        objOne.pop()
+        objOne.pop()
+        objOne.pop()
+        objOne.pop()
+        objOne.dis()
+
+       
+        
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverce String in stack</title>
+</head>
+
+<body>
+    <script>
+        let string = "HELLO"
+
+        let stack = [];
+        let currVal = stack.length
+
+        let reverceStr = []
+        let reverCeCurr = reverceStr.length
+
+        function push(str) {
+            for (let i = 0; i < str.length; i++) {
+                stack[currVal] = str[i]
+                currVal++;
+            }
+        }
+
+        function pop(arr) {
+            for (let i = arr.length - 1; i >= 0; i--) {
+                reverceStr[reverCeCurr] = arr[i];
+                reverCeCurr--;                
+            }
+        }
+        push(string)
+        pop(stack)
+        console.log(strone);
+        
+        console.log(stack);
+        console.log(reverceStr);
+
+
+    </script>
+</body>
+
+</html>
